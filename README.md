@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Travel Recommendations Chatbot is designed to simplify the process of finding hotel recommendations for travelers. Utilizing advanced natural language processing and data retrieval techniques, the chatbot offers personalized hotel recommendations based on user queries. This project is a collaboration by the RJ team, consisting of Rio Jia (xueyuan.jia@vanderbilt.edu) and Jordan Nieusma (jordan.m.nieusma@vanderbilt.edu).
+The Travel Recommendations Chatbot is designed to simplify the process of finding hotel recommendations for travelers. Utilizing advanced natural language processing and data retrieval techniques, the chatbot offers personalized hotel recommendations based on user queries. This project is a collaboration by Rio Jia (xueyuan.jia@vanderbilt.edu) and Jordan Nieusma (jordan.m.nieusma@vanderbilt.edu).
 
 ## Features
 
