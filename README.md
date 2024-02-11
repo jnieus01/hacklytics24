@@ -14,9 +14,8 @@ The Travel Recommendations Chatbot is designed to simplify the process of findin
 
 The chatbot is implemented in Python and utilizes several key libraries and APIs to provide its functionality:
 
-- **Gradio**: For creating the web interface that users interact with.
 - **Langchain**: For leveraging advanced language models in processing user queries.
-- **Traversaal Ares API**: To fetch real-time hotel data based on the processed queries.
+- **Traversaal Ares API**: To fetch real-time web data based on the processed queries.
 
 ### Core Functions
 
