@@ -1,4 +1,5 @@
-# Navigate Your Next Stay: Effortless Hotel Discovery with a Chat
+# InnSight Chatbot
+## Navigate Your Next Stay: Effortless Hotel Discovery with a Chat
 
 ## Overview
 
