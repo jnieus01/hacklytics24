@@ -25,6 +25,7 @@ The chatbot is implemented in Python and utilizes several key libraries and APIs
 - `02_Data_Preprocessing.ipynb`: Cleans and preprocesses data, producing `hotel_data_for_vector_db.txt`.
 - `hotel_data_for_vector_db.txt`: Processed text file serving as the vector database for the chatbot.
 - `03_Hotel_Search_Rag.ipynb`: Implements hotel rating retrieval and chatbot functionality.
+- WIP folder contains another Data Preprocessing file where we did some additional data preprocessing like translating other language text to english as well as converting images to text but it didn't make it into the final dataset used for the vector database due to time constraints.
 
 ## Setup Instructions
 1. Access a JupyterLab session on Intel Developer Cloud (equipped with Falcon and GPT4All).
