@@ -1,4 +1,4 @@
-# Travel Recommendations Chatbot
+# Navigate Your Next Stay: Effortless Hotel Discovery with a Chat
 
 ## Overview
 
@@ -14,31 +14,18 @@ The Travel Recommendations Chatbot is designed to simplify the process of findin
 
 The chatbot is implemented in Python and utilizes several key libraries and APIs to provide its functionality:
 
+- **Intel Developer Cloud**: For its PyTorch GPU Compute Environment and Built In Falcon & GPT4All Models
 - **Langchain**: For leveraging advanced language models in processing user queries.
 - **Traversaal Ares API**: To fetch real-time web data based on the processed queries.
 
 ### Core Functions
 
-1. **Fetching Data from Ares API**: A function is implemented to communicate with the Ares API, retrieving current hotel data based on user queries.
+1. **Fetching Data from Ares API**: Leverages the Ares API to retrieve real time data based on user queries.
 2. **Processing User Queries**: Utilizes the Langchain library to understand and process natural language inputs from users.
 
-## Setup and Installation
-
-To run the chatbot locally, you need to install the required dependencies:
-
-```bash
-pip install gradio
-pip install langchain==0.0.335
-```
-
-## Usage
-
-After installing the dependencies, you can start the chatbot by executing the main script in the Jupyter notebook. The web interface can then be accessed through the provided URL to start interacting with the chatbot.
 
 ## Contribution
 
 We welcome contributions from the community. If you would like to contribute, please reach out to the team members via email.
 
-## License
 
-This project is open-sourced under the MIT license.
