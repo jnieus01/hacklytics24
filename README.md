@@ -2,13 +2,14 @@
 
 ## Overview
 
-The Travel Recommendations Chatbot is designed to simplify the process of finding hotel recommendations for travelers. Utilizing advanced natural language processing and data retrieval techniques, the chatbot offers personalized hotel recommendations based on user queries. This project is a collaboration by Rio Jia (xueyuan.jia@vanderbilt.edu) and Jordan Nieusma (jordan.m.nieusma@vanderbilt.edu).
+The InnSight Chatbot is designed to answer queries about hotels, their ratings, and locations. It utilizes a vector database and Traversaal AI's API for insightful, context-rich responses. Utilizing advanced natural language processing and data retrieval techniques, the chatbot offers personalized hotel suggestions based on user queries. This project is a collaboration by Rio Jia (xueyuan.jia@vanderbilt.edu) and Jordan Nieusma (jordan.m.nieusma@vanderbilt.edu).
  
 ## Features
 
 - **Personalized Hotel Recommendations**: Users can receive hotel suggestions tailored to their specific needs and preferences.
-- **Easy Integration**: Built with flexibility in mind, the chatbot can be easily integrated into various platforms to assist users in finding their next stay.
-- **User-Friendly Interface**: The chatbot is designed with a straightforward and interactive interface, ensuring a smooth user experience.
+- **Accurate Q&A**: Leverages LangChain and a vector DB for in context learning 
+- **Fetches Real Time Data from Ares API**: Leverages the Ares API to retrieve real time data based on user queries.
+
 
 ## Technical Overview
 
@@ -18,11 +19,31 @@ The chatbot is implemented in Python and utilizes several key libraries and APIs
 - **Langchain**: For leveraging advanced language models in processing user queries.
 - **Traversaal Ares API**: To fetch real-time web data based on the processed queries.
 
-### Core Functions
+## File Organization
+- `01_EDA.ipynb`: Conducts Exploratory Data Analysis on the raw hotel ratings dataset provided by Traversaal AI 
+- `02_Data_Preprocessing.ipynb`: Cleans and preprocesses data, producing `hotel_data_for_vector_db.txt`.
+- `hotel_data_for_vector_db.txt`: Processed text file serving as the vector database for the chatbot.
+- `03_Hotel_Search_Rag.ipynb`: Implements hotel rating retrieval and chatbot functionality.
 
-1. **Fetching Data from Ares API**: Leverages the Ares API to retrieve real time data based on user queries.
-2. **Processing User Queries**: Utilizes the Langchain library to understand and process natural language inputs from users.
+## Setup Instructions
+1. Access a JupyterLab session on Intel Developer Cloud (equipped with Falcon and GPT4All).
+2. Upload `hotel_data_for_vector_db.txt` and `03_Hotel_Search_Rag.ipynb`.
+3. Execute all cells in `03_Hotel_Search_Rag.ipynb`.
+4. Interact with InnSight Chatbot in the final cell of the notebook.
 
+### Configuration Options
+- Adjust top K, temperature, number of threads, chunk size, overlap size, max tokens.
+- Toggle RAG (Retrieval-Augmented Generation) and ARES API as needed.
+- Interact through the query box; reset conversation with ‘Clear Conversation.’
+
+## Next Steps
+- **UI Implementation**: Develop a user-friendly interface for the chatbot.
+- **Deployment**: Host the chatbot on a server for wider accessibility.
+- **User Accounts**: Enable multi-user functionality with personalized history and session persistence.
+- **Expand Functionality**: Integrate additional features such as personalized recommendations and advanced query handling.
+
+## Acknowledgements
+Special thanks to Intel Developer Cloud for the ‘RAG with LangChain’ starter code in the ‘Training’ section, Traversaal AI for the creation of this project, and Data Science @ Georgia Tech for putting on Hacklytics 2024! 
 
 ## Contribution
 
